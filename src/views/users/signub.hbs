@@ -1,0 +1,66 @@
+<!--<div class="row">
+    <div class="col-md-4 mx-auto">
+        <div class="card">
+            <div class="card-header">
+                REGISTRARSE
+            </div>
+            <img src="/image/logo.jpg" class="rounded-circle mx-auto d-block md-4 logo">
+            <div class="card-body">
+                <form action="/users/signub" method="post">
+                   <div class="form-group">
+                        <input type="name" class="form-control" name="name" placeholder="NOMBRE" value="{{name}}">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" name="email" placeholder="CORREO" value="{{email}}">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" name="contraseña" placeholder="CONTRASEÑA" value="">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" name="confirmar_contraseña"
+                            placeholder="CONFIRMAR CONTRASEÑA">
+                    </div>
+                    <button class="btn btn-success btn-block">ENVIAR</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>-->
+  <link rel="stylesheet" href="/css/style.css">
+<div class="fondo">
+        <form action="/users/signub" method="post">
+          <div class="form">
+            <h2>
+              REGISTRATE
+            </h2>
+            <div class="grupo">
+              <input type="name" name="name" id=""
+              value="{{name}}"/><span
+                class="barra"
+              ></span>
+              <label>NOMBRE</label>
+            </div>
+            <div class="grupo">
+              <input type="email" name="email" id="" value="{{email}}"/><span
+                class="barra"
+              ></span>
+              <label>CORREO</label>
+            </div>
+            <div class="grupo">
+              <input type="password" name="contraseña" id=""  /><span
+                class="barra"
+              ></span>
+              <label>CONTRASEÑA</label>
+            </div>
+               <div class="grupo">
+              <input type="password" name="confirmar_contraseña" id=""  /><span
+                class="barra"
+              ></span>
+              <label>CONFIRMAR CONTRASEÑA</label>
+            </div>
+            <button type="submit" id="contactar">REGISTRARSE</button>
+          </div>
+        </form>
+      </div>
+

@@ -1,0 +1,50 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">NOTAS APP</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">INICIO<span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about">QUIENES SOMOS</a>
+                    </li>
+
+
+                </ul>
+              
+                    <ul class="navbar-nav ml-auto">
+                        {{#if user}}
+                       <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                            aria-expanded="false">
+                            NOTAS
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="/notes">TODAS NOTAS</a>
+                            <a class="dropdown-item" href="/notes/add">AGREGAR  NOTA</a>
+                            <a class="dropdown-item" href="/users/logout">CERRAR SESION</a>
+                        </div>
+                    </li>
+                    {{else}}
+                    <li class="nav-items">
+                        <a href="/users/signin" class="nav-link">INICIAR SESION</a>
+
+                    </li>
+                    <li class="nav-items">
+                        <a href="/users/signub" class="nav-link">REGISTRARSE</a>
+
+                    </li>
+                  {{/if}}
+                    </ul>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
